@@ -6,5 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Word Frequency</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="main-title">Word Frequency</h1>
+    </header>
+    <main class="main-container">
+      <section class="text-section">
+        <label class="text-label" for="input-text"
+          >Enter your text below:</label
+        >
+        <textarea
+          class="text-container"
+          id="input-text"
+          maxlength="2048"
+          wrap="hard"
+          cols="75"
+          rows="20"
+        ></textarea>
+        <p class="error-message hidden">Please enter your text</p>
+        <button class="btn-count" type="submit" name="">Count words</button>
+      </section>
+
+      <section class="w_table-section hidden">
+        <table class="words-table">
+          <tr id="label-table">
+            <th id="label-word">WORD</th>
+            <th id="label-frequency">FREQUENCY</th>
+          </tr>
+
+          <tr class="word-row">
+            <td class="row-content">Word1</td>
+            <td class="row-content">3</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="graphic-section hidden"></section>
+    </main>
+    <footer>
+      <p class="credits">Developed by Roberta Quiles</p>
+    </footer>
+  </body>
 </html>
