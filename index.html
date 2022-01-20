@@ -5,46 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Word Frequency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="main-title">Word Frequency</h1>
-    </header>
-    <main class="main-container">
-      <section class="text-section">
-        <label class="text-label" for="input-text"
-          >Enter your text below:</label
-        >
-        <textarea
-          class="text-container"
-          id="input-text"
-          maxlength="2048"
-          wrap="hard"
-          cols="75"
-          rows="20"
-        ></textarea>
-        <p class="error-message hidden">Please enter your text</p>
-        <button class="btn-count" type="submit" name="">Count words</button>
-      </section>
+    <div class="content-center">
+      <header>
+        <h1 class="main-title">
+          Word <br />
+          Frequency
+        </h1>
+      </header>
+      <main class="main-container">
+        <section class="text-section">
+          <label class="text-label" for="input-text"
+            >Enter your text below:</label
+          >
+          <textarea
+            class="text-container"
+            id="input-text"
+            maxlength="2048"
+            wrap="hard"
+            cols="75"
+            rows="20"
+          ></textarea>
+          <p class="error-message hidden">Please enter your text</p>
+          <button class="btn-count" type="submit" name="">Count words</button>
+        </section>
 
-      <section class="w_table-section hidden">
-        <table class="words-table">
-          <tr id="label-table">
-            <th id="label-word">WORD</th>
-            <th id="label-frequency">FREQUENCY</th>
-          </tr>
+        <section class="w_table-section hidden">
+          <table class="words-table">
+            <tr id="label-table">
+              <th class="table-title">WORD</th>
+              <th class="table-title">FREQUENCY</th>
+            </tr>
 
-          <tr class="word-row">
-            <td class="row-content">Word1</td>
-            <td class="row-content">3</td>
-          </tr>
-        </table>
-      </section>
+            <tr class="word-row">
+              <td class="row-content">Word1</td>
+              <td class="row-content">3</td>
+            </tr>
+          </table>
+        </section>
 
-      <section class="graphic-section hidden"></section>
-    </main>
-    <footer>
-      <p class="credits">Developed by Roberta Quiles</p>
-    </footer>
+        <section class="graphic-section hidden"></section>
+      </main>
+      <footer>
+        <p class="credits">Developed by Roberta Quiles</p>
+      </footer>
+    </div>
   </body>
 </html>
